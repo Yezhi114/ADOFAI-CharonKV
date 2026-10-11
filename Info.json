@@ -1,0 +1,9 @@
+{
+  "Id": "CharonKV",
+  "DisplayName": "Charon KV",
+  "Author": "YeZhi",
+  "Version": "1.3.0",
+  "ManagerVersion": "0.32.4.0",
+  "AssemblyName": "CharonKV.dll",
+  "EntryMethod": "CharonKV.Main.Load"
+} 

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C20E8D11-B02E-4D0C-BB55-9B78FC044592}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CharonKV</RootNamespace>
+    <AssemblyName>CharonKV</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>lib\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>lib\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RDTools">
+      <HintPath>lib\RDTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>lib\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>lib\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>lib\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>lib\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>lib\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>lib\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityModManager">
+      <HintPath>lib\UnityModManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\charon.png" />
+    <EmbeddedResource Include="Resources\charon_head.png" />
+    <EmbeddedResource Include="Resources\charon_wink.png" />
+    <EmbeddedResource Include="Resources\clear.png" />
+    <EmbeddedResource Include="Resources\key1.png" />
+    <EmbeddedResource Include="Resources\key10.png" />
+    <EmbeddedResource Include="Resources\key11.png" />
+    <EmbeddedResource Include="Resources\key12.png" />
+    <EmbeddedResource Include="Resources\key13.png" />
+    <EmbeddedResource Include="Resources\key14.png" />
+    <EmbeddedResource Include="Resources\key15.png" />
+    <EmbeddedResource Include="Resources\key16.png" />
+    <EmbeddedResource Include="Resources\key2.png" />
+    <EmbeddedResource Include="Resources\key3.png" />
+    <EmbeddedResource Include="Resources\key4.png" />
+    <EmbeddedResource Include="Resources\key5.png" />
+    <EmbeddedResource Include="Resources\key6.png" />
+    <EmbeddedResource Include="Resources\key7.png" />
+    <EmbeddedResource Include="Resources\key8.png" />
+    <EmbeddedResource Include="Resources\key9.png" />
+    <EmbeddedResource Include="Resources\piano.png" />
+    <EmbeddedResource Include="Resources\pressed_key1.png" />
+    <EmbeddedResource Include="Resources\pressed_key10.png" />
+    <EmbeddedResource Include="Resources\pressed_key11.png" />
+    <EmbeddedResource Include="Resources\pressed_key12.png" />
+    <EmbeddedResource Include="Resources\pressed_key13.png" />
+    <EmbeddedResource Include="Resources\pressed_key14.png" />
+    <EmbeddedResource Include="Resources\pressed_key15.png" />
+    <EmbeddedResource Include="Resources\pressed_key16.png" />
+    <EmbeddedResource Include="Resources\pressed_key2.png" />
+    <EmbeddedResource Include="Resources\pressed_key3.png" />
+    <EmbeddedResource Include="Resources\pressed_key4.png" />
+    <EmbeddedResource Include="Resources\pressed_key5.png" />
+    <EmbeddedResource Include="Resources\pressed_key6.png" />
+    <EmbeddedResource Include="Resources\pressed_key7.png" />
+    <EmbeddedResource Include="Resources\pressed_key8.png" />
+    <EmbeddedResource Include="Resources\pressed_key9.png" />
+    <EmbeddedResource Include="Resources\unpressed_left.png" />
+    <EmbeddedResource Include="Resources\unpressed_right.png" />
+    <EmbeddedResource Include="Resources\die.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

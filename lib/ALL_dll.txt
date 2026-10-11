@@ -1,0 +1,14 @@
+0Harmony.dll
+Assembly-CSharp.dll
+RDTools.dll
+System.Drawing.dll
+UnityEngine.AssetBundleModule.dll
+UnityEngine.CoreModule.dll
+UnityEngine.dll
+UnityEngine.ImageConversionModule.dll
+UnityEngine.IMGUIModule.dll
+UnityEngine.InputLegacyModule.dll
+UnityEngine.JSONSerializeModule.dll
+UnityEngine.UI.dll
+UnityEngine.UIModule.dll
+UnityModManager.dll
